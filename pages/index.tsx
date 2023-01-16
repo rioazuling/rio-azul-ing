@@ -39,6 +39,7 @@ export default function Home() {
             className="w-full h-[415px] object-cover"
             loop={true}
             muted={true}
+            playsInline={true}
             src="/PresentacionEmpresa_Trim.mp4"
           />
         </div>
