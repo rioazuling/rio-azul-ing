@@ -19,8 +19,12 @@ export default function Home() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.volume = 0.05;
-      videoRef.current.autoplay = true;
+      // videoRef.current.autoplay = true;
+      videoRef.current.addEventListener("canplay", function () {
+        if (videoRef.current) {
+          videoRef.current.play();
+        }
+      });
     }
   }, []);
 
@@ -31,8 +35,10 @@ export default function Home() {
           <video
             ref={videoRef}
             controls
+            autoPlay={true}
             className="w-full h-[415px] object-cover"
             loop={true}
+            muted={true}
             src="/PresentacionEmpresa_Trim.mp4"
           />
         </div>
