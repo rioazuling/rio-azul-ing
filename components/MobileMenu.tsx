@@ -78,7 +78,7 @@ const MobileMenu2 = () => {
           <hr className="my-3" />
         </li>
         <li className="mt-3 px-2">
-          <ExternalLink href="https://www.instagram.com/rioazuling/?hl=es">Linkedin</ExternalLink>
+          <ExternalLink href="https://www.linkedin.com/company/rioazuling/">Linkedin</ExternalLink>
           <hr className="my-3" />
         </li>
       </ul>

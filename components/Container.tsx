@@ -10,10 +10,10 @@ import Image from "next/image";
 //import Footer from "./Footer";
 
 import logo from "../public/logo.png";
-import yt from "../public/yt.png";
-import ig from "../public/ig.png";
+import yt from "../public/ytFt.png";
+import ig from "../public/igFt.png";
 import fb from "../public/fb.png";
-import link from "../public/link.png";
+import link from "../public/linkFt.png";
 
 import MobileMenu from "./MobileMenu";
 
@@ -105,7 +105,7 @@ export default function Container(props: any) {
               </ExternalLink>
               <ExternalLink
                 className="hidden md:inline-block transition-all"
-                href="https://www.facebook.com/rioazuling/"
+                href="https://www.linkedin.com/company/rioazuling/"
               >
                 <Image alt="home" className="h-auto w-6" src={link} />
               </ExternalLink>

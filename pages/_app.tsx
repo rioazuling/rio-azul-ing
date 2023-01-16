@@ -6,7 +6,7 @@ import {Inter} from "@next/font/google";
 
 import Footer from "../components/Footer";
 
-const interVariable = Inter();
+const interVariable = Inter({subsets: ["latin"]});
 
 export default function App({Component, pageProps}: AppProps) {
   return (

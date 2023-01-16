@@ -33,28 +33,37 @@ export default function Footer() {
           </div>
         </NextLink>
 
-        <div className="flex flex-col sm:flex-row gap-8 lg:gap-0 items-center">
-          <div className="flex font-semibold">
+        <div className="flex flex-row  gap-8 lg:gap-0 items-center">
+          <div className="flex font-semibold flex-col gap-4 sm:gap-0 sm:flex-row">
             <div className="flex flex-row text-white rounded-xl text-center gap-2 items-center h-fit">
               <Image alt="contactanos" className="h-3 w-3" src={contactanos} />
               <p className="text-sm">Contactanos</p>
             </div>
 
             <div className="flex flex-col gap-4">
-              <div className="ml-5 flex flex-row bg-white px-2 rounded-xl text-center gap-1 items-center w-32">
+              <div className="ml-0 sm:ml-5 flex flex-row bg-white px-2 rounded-xl py-0.5 text-center gap-1 items-center w-32">
                 <Image alt="email" className="h-3 w-4" src={wsp} />
-                <p className="text-sm dark:text-black">381 999 999</p>
+                <a
+                  className="text-sm dark:text-black"
+                  href="https://wa.me/+3815420555?text=hola"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  381-5420555
+                </a>
               </div>
 
-              <div className="ml-5 flex flex-row bg-white px-2 rounded-xl text-center gap-1 items-center">
+              <div className="ml-0 sm:ml-5 flex flex-row bg-white px-2 py-1 rounded-xl text-center gap-1 items-center">
                 <Image alt="email" className="h-3 w-4" src={email} />
-                <p className="text-sm dark:text-black">ejemplo@gmail.com</p>
+                <a className="text-sm dark:text-black" href="mailto:rioazul@rioazul.com.ar">
+                  rioazul@rioazul.com.ar
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="flex font-semibold gap-4">
-            <div className="flex flex-row text-white px-2 rounded-xl text-center gap-2 items-center h-fit">
+          <div className="flex font-semibold gap-4 flex-col sm:flex-row">
+            <div className="flex flex-row text-white px-0 rounded-xl text-center gap-2 items-center h-fit">
               <Image alt="seguinos" className="h-4 w-4" src={seguinos} />
               <p className="text-sm">Seguinos</p>
             </div>
