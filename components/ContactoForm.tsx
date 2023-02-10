@@ -1,6 +1,7 @@
 import {useRef} from "react";
 import {useForm, SubmitHandler} from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import {toast, Toaster} from "react-hot-toast";
 
 type Inputs = {
   nombre: string;
@@ -13,13 +14,10 @@ const ContactoForm = () => {
   const form = useRef<HTMLFormElement>(null);
   const {
     register,
+    reset,
     handleSubmit,
     formState: {errors},
   } = useForm<Inputs>();
-
-  // const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
-
-  // service_73npupo
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     if (form.current) {
@@ -32,9 +30,11 @@ const ContactoForm = () => {
         )
         .then((result) => {
           console.log(result.text);
+          toast.success("Mensaje enviado correctamente!");
+          reset();
         });
     } else {
-      console.error("No se encontró el elemento form");
+      toast.error("Error al enviar. Inténtelo de nuevo más tarde");
     }
   };
 
@@ -115,6 +115,14 @@ const ContactoForm = () => {
           Enviar mensaje
         </button>
       </div>
+      <Toaster
+        toastOptions={{
+          style: {
+            background: "#4a8364",
+            color: "#fff",
+          },
+        }}
+      />
     </form>
   );
 };
