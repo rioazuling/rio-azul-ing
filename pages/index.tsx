@@ -48,7 +48,7 @@ export default function Home() {
           {/*  */}
           <div className="w-10/12 rounded-md sm:w-96 bg-slate-300 px-5 pt-5">
             <div className="w-8 h-8 bg-blue-50 rounded-full border-2 border-slate-300 absolute top-[505px] sm:top-[510px] sm:mt-2">
-              <span className="text-white font-serif text-3xl relative -top-1.5 ml-1">+</span>
+              <span className="text-white font-serif text-3xl relative -top-1.5 ml-[5px]">+</span>
             </div>
             <p className="text-blue-50 font-semibold text-base sm:text-2xl">
               Diseñamos y construimos naves metalicas con el respaldo de:
