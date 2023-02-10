@@ -1,5 +1,8 @@
-import {useRef} from "react";
+import {env} from "process";
+
+import {useRef, useState} from "react";
 import {useForm, SubmitHandler} from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 type Inputs = {
   nombre: string;
@@ -15,30 +18,29 @@ const ContactoForm = () => {
     handleSubmit,
     formState: {errors},
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
-  // const onSubmit: SubmitHandler<Inputs> = (data) => {
-  //   emailjs
-  //     .sendForm(
-  //       'service_5ggqwk9',
-  //       'template_kerep2d',
-  //       form.current,
-  //       'v3DVDXaxyp-FrJqSe'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text)
-  //         toast.success('Successfully sent!')
-  //         reset()
-  //       },
-  //       (error) => {
-  //         toast.error('Error to send. Try again later.')
-  //       }
-  //     )
-  // }
+  // const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+
+  // service_73npupo
+
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    if (form.current) {
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID as string,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
+          form.current,
+          process.env.NEXT_PUBLIC_KEY_PUBLIC as string,
+        )
+        .then((result) => {
+          console.log(result.text);
+        });
+    } else {
+      console.error("No se encontró el elemento form");
+    }
+  };
 
   return (
-    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <form ref={form} className="flex flex-col gap-4 mt-8" onSubmit={handleSubmit(onSubmit)}>
       {/* register your input into the hook by invoking the "register" function */}
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:flex-row gap-4 w-64 sm:w-auto">
