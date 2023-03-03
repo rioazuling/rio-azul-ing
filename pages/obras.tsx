@@ -33,7 +33,7 @@ export default function Obras() {
                 "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
               }
               imageSRC={obra1}
-              title={"Sistema ampliable"}
+              title={"PLOT II"}
             
             />
           </div>
