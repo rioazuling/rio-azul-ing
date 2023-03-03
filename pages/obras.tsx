@@ -34,13 +34,7 @@ export default function Obras() {
               }
               imageSRC={obra1}
               title={"Sistema ampliable"}
-            />
-            <CardObras
-              description={
-                "hola buenos dias  siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
-              }
-              imageSRC={probando123}
-              title={"hola buen dia  ampliable"}
+            
             />
           </div>
         </div>
