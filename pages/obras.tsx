@@ -1,7 +1,12 @@
 import CardObras from "../components/CardObras";
 import Container from "../components/Container";
-import obra1 from "../public/obra1.png";
-import pruebafoto from "../public/pruebafoto.png";
+import agroalas from "../public/agroalas.png";
+import bancaria from "../public/bancaria.png";
+import labanda from "../public/labanda.png";
+import lapatria from "../public/lapatria.png";
+import ploti from "../public/ploti.png";
+import plotii from "../public/plotii.png";
+import trapani from "../public/trapani.png";
 
 export default function Obras() {
   return (
@@ -18,24 +23,62 @@ export default function Obras() {
               description={
                 "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
               }
-              imageSRC={obra1}
-              title={"Sistema ampliable"}
+              imageSRC={agroalas}
+              title={"AGROALAS"}
             />
             <CardObras
               description={
                 "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
               }
-              imageSRC={obra1}
-              title={"Sistema ampliable"}
+              imageSRC={labanda}
+              title={"LA BANDA"}
             />
             <CardObras
               description={
                 "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
               }
-              imageSRC={pruebafoto}
+              imageSRC={plotii}
               title={"PLOT II"}
             
             />
+            <CardObras
+              description={
+                "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
+              }
+              imageSRC={ploti}
+              title={"PLOT I"}
+            
+            />
+            
+            <CardObras
+              description={
+                "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
+              }
+              imageSRC={lapatria}
+              title={"LA PATRIA "}
+            
+            />
+            
+            <CardObras
+              description={
+                "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
+              }
+              imageSRC={bancaria}
+              title={"ASOC. BANCARIA"}
+            
+            />
+            
+            <CardObras
+              description={
+                "Nuestro diseño tiene en cuenta siempre las futuras ampliaciones requeridas por el cliente, logrando así unificar las distintas etapas durante la evolución de todo el proyecto."
+              }
+              imageSRC={trapani}
+              title={"TRAPANI"}
+            
+            />
+          
+          
+            
           </div>
         </div>
       </Container>
