@@ -129,7 +129,7 @@ export default function Home() {
                 "Las estructuras son protegidas de la corrosión por fosfatizado, y se aplican pinturas con dispositivos Air Less en cabina automática utilizando diferentes tipos de revestimientos industriales, acrílicos, poliuretanicos, epoxies, etc."
               }
               imageSRC={pinturas}
-              title={"Pinturas"}
+              title={"Cabina Automática"}
             />
           </div>
         </div>
@@ -164,15 +164,12 @@ export default function Home() {
           <div className="h-2 w-24 sm:w-48 rounded-md bg-blue-50 mb-4" />
 
           <p className="text-base sm:text-lg mb-4 text-black dark:text-gray-400">
-            <span className="font-bold">Visión</span>: “Sere una empresa reconocida, y elegida, por
-            nuestro respeto, compromiso e innovación y productos y servicios, además de la calidad
-            humana y profesional de nuestra gente y por nuestra contribución a la comunidad.”
+            <span className="font-bold">Visión</span>: “Ser una empresa reconocida por
+            nuestro compromiso.”
           </p>
           <p className="text-base sm:text-lg mb-4 text-black dark:text-gray-400">
-            <span className="font-bold">Misión</span>: “Sere referentes Tucumán y el NOA, en el
-            diseño, fabricación y montaje de naves industriales, y afines, entregando soluciones a
-            nuestros clientes que satisfagan sus expectativas, en tiempo y forma, brindándoles
-            productos de calidad y con excelencia en el servicio”.
+            <span className="font-bold">Misión</span>: “Ser referentes en el
+            diseño y construcción de naves industriales metalicas”.
           </p>
 
           <div>
@@ -184,7 +181,7 @@ export default function Home() {
               <Valores title={"creatividad para dar soluciones"} />
               <Valores title={"respeto por el valor de la palabra"} />
               <Valores title={"garantia"} />
-              <Valores title={"flexibilidad / adaptabilidada"} />
+              <Valores title={"flexibilidad / adaptabilidad"} />
               <Valores title={"respaldo"} />
               <Valores title={"capacidad de aprendizaje"} />
               <Valores title={"precision"} />
